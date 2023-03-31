@@ -198,6 +198,22 @@ header {
     width: 264px;
 }
 
+.advantages-icon {
+    display: flex;
+    height: 112px;
+    background-color: var(--light);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.advantages-icon-img {
+    width: 64px;
+    height: 64px;
+}
+
+
+
 .advantages-item:not(:last-child) {
     margin-right: 24px;
 }
@@ -231,7 +247,8 @@ margin-top: 8px;
 }
 
 .servis-title,
-.team-title {
+.team-title,
+.customers-title {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -265,9 +282,17 @@ margin-top: 8px;
     margin-right: 24px;
 }
 
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
 .social-list-item {
-        width: 40px;
-        height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -279,6 +304,21 @@ margin-top: 8px;
     height: 100%;
     border-radius: 50%;
     background-color: var(--primary-brand);
+    color: var(--light);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--pressed-state);
+}
+
+.social-list-icon {
+    fill: currentColor;
+}
+
+
+.team-wrap>.description {
+    margin-bottom: 8px;
 }
 
 
@@ -287,11 +327,58 @@ margin-top: 8px;
     padding-bottom: 32px;
 }
 
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+
+.customers-link {
+    display: flex;
+    width: 168px;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    color: #8E8F99;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.customers-icon {
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid #404BBF;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+    fill: var(--pressed-state);
+}
+
+
 .footer {
     background: var(--dark);
     padding-top: 101px;
     padding-bottom: 100px;
 
+}
+
+.footer>.container {
+    display: flex;
+    gap: 120px;
 }
 
 .footer-content {
@@ -300,10 +387,34 @@ margin-top: 8px;
 
 .slogan {
     margin-top: 18px;
-
     color: var(--light);
     line-height: 1.5;
 }
+
+.footer-social {
+    width: 208px;
+}
+
+.social-title {
+    color: var(--basik-white);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.social-list-footer {
+    display: flex;
+    gap: 16px;
+}
+
+.social-list-footer .social-list-link:hover {
+    background-color: #31D0AA;
+}
+
+
+
+/*СТОРІНКА ПОРТФОЛІО*/
 
 .portfolio {
    padding-top: 96px;
