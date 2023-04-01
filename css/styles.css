@@ -163,6 +163,8 @@ header {
     padding-bottom: 188px;
     max-width: 1440px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-image: 
     linear-gradient(to top, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -195,7 +197,7 @@ header {
 }
 
 .advantages-item {
-    width: 264px;
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages-icon {
@@ -340,10 +342,14 @@ margin-top: 8px;
     margin-top: 72px;
 }
 
+.customers-item{
+    width: calc((100% - 5 * 24px) / 6);
+}
+
 
 .customers-link {
     display: flex;
-    width: 168px;
+    width: 100%;
     height: 88px;
     justify-content: center;
     align-items: center;
@@ -503,5 +509,6 @@ margin-top: 8px;
     color: var(--basik-white);
     background: var(--pressed-state);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: var(--pressed-state);
 }
 
